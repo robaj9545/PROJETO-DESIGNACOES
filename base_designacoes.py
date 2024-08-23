@@ -110,9 +110,9 @@ def edit_data():
 # Menu de navegação
 st.sidebar.title("Menu")
 
-page = "Designações"
+#page = "Designações"
 
-page = st.sidebar.selectbox("Selecione a página", ["Database", "Designações", "Substituições"])
+page = st.sidebar.selectbox("Selecione a página", ["Designações", "Database", "Substituições"])
 
 if page == "Database":
     st.title("Carregar Base de Dados")
