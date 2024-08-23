@@ -8,9 +8,9 @@ from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
 # Caminho para salvar o arquivo CSV
 DATABASE_PATH = 'database.csv'
 # Senha para acesso à edição
-EDIT_PASSWORD = "1234"
+EDIT_PASSWORD = "#20@24"
 # Senha para acesso ao carregamento de dados
-LOAD_PASSWORD = "abcd"
+LOAD_PASSWORD = "#20@24"
 
 # Função para carregar o arquivo de base de dados
 def load_data():
