@@ -3,6 +3,7 @@ import pandas as pd
 import io
 import os
 from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
+from xlsxwriter import Workbook
 
 # Caminho para salvar o arquivo CSV
 DATABASE_PATH = 'database.csv'
@@ -15,6 +16,8 @@ LOAD_PASSWORD = "abcd"
 def load_data():
     # Solicita a senha para carregar os dados
     load_password = st.text_input("Digite a senha para carregar a base de dados", type="password")
+    df = pd.read_csv(DATABASE_PATH)
+    st.session_state['df'] = df
     if load_password == LOAD_PASSWORD:
         if os.path.exists(DATABASE_PATH):
             df = pd.read_csv(DATABASE_PATH)
