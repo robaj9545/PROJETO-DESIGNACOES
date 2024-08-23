@@ -3,7 +3,7 @@ import pandas as pd
 import io
 import os
 from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
-from xlsxwriter import Workbook
+
 
 # Caminho para salvar o arquivo CSV
 DATABASE_PATH = 'database.csv'
