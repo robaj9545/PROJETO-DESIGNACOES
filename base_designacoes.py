@@ -109,6 +109,9 @@ def edit_data():
 
 # Menu de navegação
 st.sidebar.title("Menu")
+
+page = "Designações"
+
 page = st.sidebar.selectbox("Selecione a página", ["Database", "Designações", "Substituições"])
 
 if page == "Database":
