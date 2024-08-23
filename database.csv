@@ -1,0 +1,68 @@
+DATA,LEITOR,IND. AUDITÓRIO,IND. ESTACIONAMENTO,VOLANTE 1,VOLANTE 2,VOLANTE DE PALCO
+2024-05-19T00:00:00,Roberto,Josiel,Ismael,Jonas,Alan,Kastier
+2024-05-23T00:00:00,Filipe,Mendes,Rogério,Ismael,Alan,Iata
+2024-05-26T00:00:00,Breno,Roberto,Samuel,Maxx,Vinícius,Neto
+2024-05-30T00:00:00,Jonatas,Wellington,Kastier,Josiel,Raimundo,Rayllson
+2024-06-02T00:00:00,Filipe,Mendes,Alan,Ismael,Jonas,Rogério
+2024-06-06T00:00:00,Breno,Fco Raimundo,Iata,Roberto,Olívio,Vinícius
+2024-06-09T00:00:00,Rayllson,Jonatas,Josiel,Neto,Samuel,Maxx
+2024-06-13T00:00:00,Kastier,Raimundo,Wellington,Mendes,Santiel,Alan
+2024-06-16T00:00:00,Breno,Roberto,Ismael,Vinícius,Iata,Filipe
+2024-06-20T00:00:00,Rayllson,Rogério,Fco Raimundo,Jonatas,Olívio,Jonas
+2024-06-23T00:00:00,Josiel,Alan,Kastier,Wellington,Neto,Samuel
+2024-06-27T00:00:00,Filipe,Iata,Raimundo,Ismael,Mendes,Maxx
+2024-06-30T00:00:00,Roberto,Rayllson,Fco Raimundo,Jonas,Vinícius,Santiel
+2024-07-04T00:00:00,Samuel,Alan,Jonatas,Neto,Kastier,Josiel
+2024-07-07T00:00:00,Iata,Wellington,Mendes,Raimundo,Filipe,Ismael
+2024-07-11T00:00:00,Roberto,Fco Raimundo,Rayllson,Olívio,Rogério,Breno
+2024-07-14T00:00:00,Josiel,Kastier,Samuel,Neto,Jonatas,Jonas
+2024-07-18T00:00:00,Wellington,Iata,Alan,Filipe,Vinícius,Mendes
+2024-07-21T00:00:00,Rayllson,Raimundo,Santiel,Roberto,Maxx,Olívio
+2024-07-25T00:00:00,Samuel,Ismael,Jonas,Kastier,Neto,Jonatas
+2024-07-28T00:00:00,Iata,Fco Raimundo,Breno,Wellington,Josiel,Alan
+2024-08-01T00:00:00,Roberto,Santiel,Filipe,Olívio,Maxx,Mendes
+2024-08-04T00:00:00,Kastier,Samuel,Jonas,Rogério,Jonatas,Neto
+2024-08-08T00:00:00,Rayllson,Raimundo,Breno,Vinícius,Iata,Josiel
+2024-08-11T00:00:00,Roberto,Santiel,Ismael,Mendes,Alan,Filipe
+NaT,,,,,,
+2024-08-15T00:00:00,Jonas,Fco Raimundo,Kastier,Samuel,Olívio,Neto
+2024-08-18T00:00:00,Wellington,Raimundo,Jonatas,Vinícius,Maxx,Iata
+2024-08-22T00:00:00,Rayllson,Josiel,Roberto,Alan,Santiel,Breno
+2024-08-25T00:00:00,Kastier,Mendes,Jonas,Samuel,Ismael,Rogério
+2024-08-29T00:00:00,Iata,Raimundo,Neto,Olívio,Maxx,Jonatas
+2024-09-01T00:00:00,Roberto,Wellington,Santiel,Filipe,Breno,Alan
+2024-09-05T00:00:00,Kastier,Samuel,Fco Raimundo,Jonas,Ismael,Vinícius
+2024-09-08T00:00:00,Iata,Mendes,Neto,Rogério,Jonatas,Josiel
+2024-09-12T00:00:00,Wellington,Rayllson,Alan,Roberto,Breno,Maxx
+2024-09-15T00:00:00,Filipe,Samuel,Jonas,Vinícius,Ismael,Olívio
+2024-09-19T00:00:00,Iata,Neto,Fco Raimundo,Santiel,Raimundo,Mendes
+2024-09-22T00:00:00,Kastier,Roberto,Wellington,Josiel,Rayllson,Breno
+2024-09-26T00:00:00,Jonatas,Rogério,Ismael,Jonas,Samuel,Maxx
+2024-09-29T00:00:00,Filipe,Santiel,Iata,Alan,Mendes,Vinícius
+2024-10-03T00:00:00,Rayllson,Wellington,Roberto,Kastier,Josiel,Neto
+2024-10-06T00:00:00,Breno,Jonas,Raimundo,Ismael,Samuel,Jonatas
+2024-10-10T00:00:00,Filipe,Rogério,Alan,Iata,Vinícius,Mendes
+2024-10-13T00:00:00,Wellington,Josiel,Santiel,Roberto,Neto,Olívio
+2024-10-17T00:00:00,Jonas,Fco Raimundo,Ismael,Breno,Samuel,Jonatas
+2024-10-20T00:00:00,Rayllson,Raimundo,Kastier,Mendes,Rogério,Alan
+2024-10-24T00:00:00,Iata,Neto,Santiel,Vinícius,Roberto,Wellington
+2024-10-27T00:00:00,Jonatas,Filipe,Josiel,Samuel,Ismael,Jonas
+2024-10-31T00:00:00,Breno,Kastier,Raimundo,Maxx,Rogério,Rayllson
+2024-11-03T00:00:00,Iata,Roberto,Mendes,Wellington,Vinícius,Alan
+2024-11-07T00:00:00,Josiel,Samuel,Fco Raimundo,Jonas,Jonatas,Ismael
+NaT,,,,,,
+2024-11-10T00:00:00,Breno,Rayllson,Kastier,Olívio,Filipe,Neto
+2024-11-14T00:00:00,Roberto,Wellington,Raimundo,Vinícius,Mendes,Alan
+2024-11-17T00:00:00,Jonas,Rogério,Iata,Maxx,Josiel,Ismael
+2024-11-21T00:00:00,Jonatas,Rayllson,Santiel,Neto,Kastier,Filipe
+2024-11-24T00:00:00,Wellington,Fco Raimundo,Raimundo,Breno,Roberto,Vinícius
+2024-11-28T00:00:00,Iata,Rogério,Samuel,Olívio,Jonas,Maxx
+2024-12-01T00:00:00,Kastier,Josiel,Alan,Filipe,Jonatas,Neto
+2024-12-05T00:00:00,Rayllson,Ismael,Fco Raimundo,Breno,Wellington,Vinícius
+2024-12-08T00:00:00,Iata,Jonas,Rogério,Mendes,Olívio,Samuel
+2024-12-12T00:00:00,Jonatas,Neto,Josiel,Roberto,Raimundo,Santiel
+2024-12-15T00:00:00,Kastier,Fco Raimundo,Alan,Vinícius,Filipe,Maxx
+2024-12-19T00:00:00,Wellington,Rayllson,Jonas,Rogério,Iata,Olívio
+2024-12-22T00:00:00,Breno,Ismael,Jonatas,Mendes,Samuel,Neto
+2024-12-26T00:00:00,Filipe,Raimundo,Kastier,Santiel,Vinícius,Maxx
+2024-12-29T00:00:00,Jonas,Josiel,Wellington,Rayllson,Roberto,Rogério
