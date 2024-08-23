@@ -8,26 +8,33 @@ from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
 DATABASE_PATH = 'database.csv'
 # Senha para acesso à edição
 EDIT_PASSWORD = "1234"
+# Senha para acesso ao carregamento de dados
+LOAD_PASSWORD = "abcd"
 
 # Função para carregar o arquivo de base de dados
 def load_data():
-    if os.path.exists(DATABASE_PATH):
-        df = pd.read_csv(DATABASE_PATH)
-        st.session_state['df'] = df
-        st.success('Base de dados carregada do arquivo!')
-    else:
-        st.warning('Nenhuma base de dados encontrada. Por favor, carregue um arquivo.')
+    # Solicita a senha para carregar os dados
+    load_password = st.text_input("Digite a senha para carregar a base de dados", type="password")
+    if load_password == LOAD_PASSWORD:
+        if os.path.exists(DATABASE_PATH):
+            df = pd.read_csv(DATABASE_PATH)
+            st.session_state['df'] = df
+            st.success('Base de dados carregada do arquivo!')
+        else:
+            st.warning('Nenhuma base de dados encontrada. Por favor, carregue um arquivo.')
 
-    uploaded_file = st.file_uploader("Escolha um arquivo CSV ou XLSX", type=["csv", "xlsx"])
-    if uploaded_file is not None:
-        if uploaded_file.name.endswith('.csv'):
-            df = pd.read_csv(uploaded_file)
-        elif uploaded_file.name.endswith('.xlsx'):
-            df = pd.read_excel(uploaded_file, engine='openpyxl')
-        
-        st.session_state['df'] = df
-        st.success('Base de dados carregada com sucesso!')
-        df.to_csv(DATABASE_PATH, index=False)  # Salvar a base de dados no arquivo
+        uploaded_file = st.file_uploader("Escolha um arquivo CSV ou XLSX", type=["csv", "xlsx"])
+        if uploaded_file is not None:
+            if uploaded_file.name.endswith('.csv'):
+                df = pd.read_csv(uploaded_file)
+            elif uploaded_file.name.endswith('.xlsx'):
+                df = pd.read_excel(uploaded_file, engine='openpyxl')
+            
+            st.session_state['df'] = df
+            st.success('Base de dados carregada com sucesso!')
+            df.to_csv(DATABASE_PATH, index=False)  # Salvar a base de dados no arquivo
+    elif load_password:
+        st.error("Senha incorreta!")
 
 # Função para visualizar dados
 def view_data():
@@ -38,7 +45,6 @@ def view_data():
 
 # Função para editar dados
 def edit_data():
-    
     # Inicializa a senha se não estiver no estado da sessão
     if 'password_valid' not in st.session_state:
         st.session_state['password_valid'] = False
