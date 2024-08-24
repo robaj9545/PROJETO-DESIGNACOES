@@ -44,21 +44,9 @@ def view_data():
     df = pd.read_csv(DATABASE_PATH)
     st.session_state['df'] = df
     if 'df' in st.session_state:
-        # Usando AgGrid para exibir a tabela de forma dinâmica
-        gb = GridOptionsBuilder.from_dataframe(st.session_state['df'])
-        gb.configure_pagination(paginationAutoPageSize=True)
-        gb.configure_default_column(resizable=True)  # Colunas redimensionáveis
-        grid_options = gb.build()
-
-        AgGrid(
-            st.session_state['df'],
-            gridOptions=grid_options,
-            fit_columns_on_grid_load=True,  # Ajustar colunas ao carregar a grid
-            height=500,  # Definir a altura da tabela, ajustável conforme necessário
-        )
+        st.write(st.session_state['df'])
     else:
         st.warning("Por favor, carregue a base de dados na página 'Database'.")
-
 
 # Função para editar dados
 def edit_data():
@@ -82,18 +70,16 @@ def edit_data():
         df = st.session_state['df']
 
         gb = GridOptionsBuilder.from_dataframe(df)
-        gb.configure_pagination(paginationAutoPageSize=True)  # Paginação automática
-        gb.configure_side_bar()  # Barra lateral para configurações
-        gb.configure_default_column(editable=True, resizable=True)  # Colunas editáveis e redimensionáveis
+        gb.configure_pagination(paginationAutoPageSize=True)  # Paginação
+        gb.configure_side_bar()  # Barra lateral
+        gb.configure_default_column(editable=True)  # Todas as colunas editáveis
         grid_options = gb.build()
 
         grid_response = AgGrid(
             df,
             gridOptions=grid_options,
             update_mode=GridUpdateMode.MODEL_CHANGED,
-            fit_columns_on_grid_load=True,  # Ajusta as colunas ao carregar
-            height=500,  # Definir a altura da tabela, ajustável conforme necessário
-            allow_unsafe_jscode=True  # Permite JavaScript para recursos adicionais
+            fit_columns_on_grid_load=True
         )
 
         edited_df = pd.DataFrame(grid_response['data'])  # Obtém os dados editados
