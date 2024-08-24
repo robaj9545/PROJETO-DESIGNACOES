@@ -41,10 +41,10 @@ def load_data():
 
 # Função para visualizar dados
 def view_data():
-    df = pd.read_csv(DATABASE_PATH, index=False)
+    df = pd.read_csv(DATABASE_PATH)
     st.session_state['df'] = df
     if 'df' in st.session_state:
-        st.write(st.session_state['df'])
+        st.write(st.session_state['df'], index=False)
     else:
         st.warning("Por favor, carregue a base de dados na página 'Database'.")
 
