@@ -46,7 +46,7 @@ def view_data():
     if 'df' in st.session_state:
         # Usando AgGrid para exibir a tabela de forma dinâmica
         gb = GridOptionsBuilder.from_dataframe(st.session_state['df'])
-        gb.configure_pagination(paginationPageSize=20)
+        gb.configure_pagination(paginationAutoPageSize=True)
         gb.configure_default_column(resizable=True)  # Colunas redimensionáveis
         grid_options = gb.build()
 
@@ -82,7 +82,7 @@ def edit_data():
         df = st.session_state['df']
 
         gb = GridOptionsBuilder.from_dataframe(df)
-        gb.configure_pagination(paginationPageSize=20)  # Paginação automática
+        gb.configure_pagination(paginationAutoPageSize=True)  # Paginação automática
         gb.configure_side_bar()  # Barra lateral para configurações
         gb.configure_default_column(editable=True, resizable=True)  # Colunas editáveis e redimensionáveis
         grid_options = gb.build()
