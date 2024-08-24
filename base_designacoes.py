@@ -41,7 +41,7 @@ def load_data():
 
 # Função para visualizar dados
 def view_data():
-    df = pd.read_csv(DATABASE_PATH)
+    df = pd.read_csv(DATABASE_PATH, index=False)
     st.session_state['df'] = df
     if 'df' in st.session_state:
         st.write(st.session_state['df'])
